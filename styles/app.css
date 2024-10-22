@@ -251,6 +251,89 @@ header {
   transform: translateX(50%) translateY(0);
 }
 
+.Slide3 {
+  background-image: url("../assets/img-icons/big-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -80px;
+  height: 1100px;
+}
+.Slide3 h4 {
+  font-family: "khandevane";
+  font-size: 43px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+.Slide3 .Content {
+  display: flex;
+  gap: 6px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+.Slide3 .Content .description p {
+  width: 100%;
+  max-width: 390px;
+  font-family: "sansRegular";
+  line-height: 30px;
+}
+.Slide3 .Content .description .footer {
+  display: flex;
+  align-items: end;
+}
+.Slide3 .Content .description .footer span {
+  font-family: "sansRegular";
+  font-size: 11px;
+  color: rgb(214, 214, 214);
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+}
+.Slide3 .Content .cards {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Slide3 .Content .cards .c1,
+.Slide3 .Content .cards .c2,
+.Slide3 .Content .cards .c3,
+.Slide3 .Content .cards .c4,
+.Slide3 .Content .cards .c5 {
+  width: 260px;
+  height: 260px;
+}
+.Slide3 .Content .cards .c2 {
+  background-image: url("../assets/img-icons/car-front.png");
+}
+.Slide3 .Content .cards .c3 {
+  background-image: url("../assets/img-icons/kilometr.png");
+}
+.Slide3 .Content .cards .c6 {
+  background-image: url("../assets/img-icons/car-inside.png");
+}
+.Slide3 .Content .cards .c1,
+.Slide3 .Content .cards .c5 {
+  background-color: #d9c6b7;
+}
+.Slide3 .Content .cards .c4 {
+  background-color: #ffcc49;
+}
+.Slide3 .Content .cards .c1 span,
+.Slide3 .Content .cards .c4 span,
+.Slide3 .Content .cards .c5 span {
+  font-family: "khandevane";
+  font-size: 27px;
+  color: #0d2e3f;
+}
+.Slide3 .Content .cards .c1 .arrow,
+.Slide3 .Content .cards .c4 .arrow,
+.Slide3 .Content .cards .c5 .arrow {
+  position: absolute;
+  bottom: 22px;
+}
+
 .SwiperContainer .swiper.main {
   max-width: 1520px;
   max-height: 1000px;
@@ -337,7 +420,8 @@ header {
   background: white; /* Thumb color */
   border-radius: 4px;
 }
-.CarSlider .customSBtnPrev, .CarSlider .customSBtnNext {
+.CarSlider .customSBtnPrev,
+.CarSlider .customSBtnNext {
   width: 35px;
   height: 35px;
   border-radius: 50%;

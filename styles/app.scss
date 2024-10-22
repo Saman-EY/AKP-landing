@@ -253,7 +253,7 @@ header {
   align-items: end;
   width: 100%;
   max-width: 320px;
-  transition: border ease .3s;
+  transition: border ease 0.3s;
   border: 1px solid transparent;
   height: 360px;
   cursor: pointer;
@@ -291,8 +291,106 @@ header {
       transform: translateX(50%) translateY(-0);
     }
   }
+}
 
-  
+.Slide3 {
+  background-image: url("../assets/img-icons/big-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -80px;
+  height: 1100px;
+
+  h4 {
+    font-family: "khandevane";
+    font-size: 43px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .Content {
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+
+    .description {
+      p {
+        width: 100%;
+        max-width: 390px;
+        font-family: "sansRegular";
+        line-height: 30px;
+      }
+
+      .footer {
+        display: flex;
+        align-items: end;
+
+        span {
+          font-family: "sansRegular";
+          font-size: 11px;
+          color: rgb(214, 214, 214);
+          transform: rotate(180deg);
+          writing-mode: vertical-lr;
+        }
+      }
+    }
+
+    .cards {
+      height: fit-content;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .c1,
+      .c2,
+      .c3,
+      .c4,
+      .c5 {
+        width: 260px;
+        height: 260px;
+      }
+
+      .c2 {
+        background-image: url("../assets/img-icons/car-front.png");
+      }
+
+      .c3 {
+        background-image: url("../assets/img-icons/kilometr.png");
+      }
+
+      .c6 {
+        background-image: url("../assets/img-icons/car-inside.png");
+      }
+
+      .c1,
+      .c5 {
+        background-color: #d9c6b7;
+      }
+
+      .c4 {
+        background-color: $primary-color;
+      }
+
+      .c1,
+      .c4,
+      .c5 {
+        span {
+          font-family: "khandevane";
+          font-size: 27px;
+          color: $secondary-color;
+        }
+
+        .arrow {
+          position: absolute;
+          bottom: 22px;
+        }
+      }
+    }
+  }
 }
 
 // MAIN SLIDER
@@ -382,18 +480,17 @@ header {
   .swiper {
     max-width: 1180px;
     max-height: 1000px;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     // background-color: red;
   }
 
-
-  .swiper-scrollbar{
+  .swiper-scrollbar {
     // background-color: red;
     width: 80%;
     background-color: transparent;
     // bottom: -1px;
     position: relative;
-    &::after{
+    &::after {
       content: "";
       background-color: #cacaca;
       position: absolute;
@@ -403,7 +500,6 @@ header {
       transform: translateY(-50%);
       z-index: -1;
     }
-
   }
 
   .swiper-scrollbar-drag {
@@ -411,8 +507,8 @@ header {
     border-radius: 4px;
   }
 
-
-  .customSBtnPrev, .customSBtnNext {
+  .customSBtnPrev,
+  .customSBtnNext {
     width: 35px;
     height: 35px;
     border-radius: 50%;
