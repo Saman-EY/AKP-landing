@@ -17,7 +17,7 @@
 body {
   font-family: "sansMedium";
   font-weight: 400;
-  min-height: 100vh;
+  min-height: 100dvh;
   font-size: 14px;
 }
 
@@ -91,6 +91,10 @@ textarea {
   text-align: justify;
 }
 
+.primary-text {
+  color: #ffcc49;
+}
+
 .BodyContainer {
   width: 100%;
   max-width: 1520px;
@@ -133,6 +137,8 @@ header {
   border-radius: 140px;
   background-color: rgba(0, 0, 0, 0.5294117647);
   border: 1px solid #ffcc49;
+  -webkit-backdrop-filter: blur(18.3999996185px);
+          backdrop-filter: blur(18.3999996185px);
   padding: 0 2rem;
 }
 .Slide1 > .options > section > div {
@@ -164,6 +170,13 @@ header {
   padding: 8px 18px;
 }
 
+.Slide2 {
+  background-image: url("../assets/img-icons/big-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -80px;
+  height: 900px;
+}
 .Slide2 > .topArrow {
   max-width: 1200px;
   margin: 0 auto;
@@ -174,7 +187,7 @@ header {
   color: #ffcc49;
 }
 .Slide2 .CarSlider {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .Slide2 .CarSlider .link > a {
@@ -193,7 +206,52 @@ header {
   height: 20px;
 }
 
-.SwiperContainer .swiper {
+.CarCard {
+  background-image: url("../assets/img-icons/car1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: end;
+  width: 100%;
+  max-width: 320px;
+  transition: border ease 0.3s;
+  border: 1px solid transparent;
+  height: 360px;
+  cursor: pointer;
+}
+.CarCard.c2 {
+  background-image: url("../assets/img-icons/car2.png");
+}
+.CarCard.c3 {
+  background-image: url("../assets/img-icons/car3.png");
+}
+.CarCard .description {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6509803922);
+  -webkit-backdrop-filter: blur(8.1999998093px);
+          backdrop-filter: blur(8.1999998093px);
+  padding: 10px;
+  font-family: "sansRegular";
+}
+.CarCard .hoverArrowBtn {
+  position: absolute;
+  transition: all ease-in 0.2s;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%) translateY(-100%);
+}
+.CarCard:hover {
+  border-color: #ffcc49;
+}
+.CarCard:hover .hoverArrowBtn {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%) translateY(0);
+}
+
+.SwiperContainer .swiper.main {
   max-width: 1520px;
   max-height: 1000px;
 }
@@ -209,7 +267,7 @@ header {
   gap: 20px;
   z-index: 10;
 }
-.SwiperContainer .swiper-pagination {
+.SwiperContainer .swiper-pagination.main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,7 +277,7 @@ header {
   width: -moz-fit-content;
   width: fit-content;
 }
-.SwiperContainer .swiper-pagination-bullet {
+.SwiperContainer .swiper-pagination-bullet.main {
   background: white;
   width: 5px;
   height: 5px;
@@ -253,4 +311,41 @@ header {
 .SwiperContainer .custom-next-btn img {
   width: 14px;
   height: 14px;
+}
+
+.CarSlider .swiper {
+  max-width: 1180px;
+  max-height: 1000px;
+  padding-bottom: 0.5rem;
+}
+.CarSlider .swiper-scrollbar {
+  width: 80%;
+  background-color: transparent;
+  position: relative;
+}
+.CarSlider .swiper-scrollbar::after {
+  content: "";
+  background-color: #cacaca;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.CarSlider .swiper-scrollbar-drag {
+  background: white; /* Thumb color */
+  border-radius: 4px;
+}
+.CarSlider .customSBtnPrev, .CarSlider .customSBtnNext {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.CarSlider .customSBtnNext {
+  rotate: 180deg;
 }/*# sourceMappingURL=app.css.map */
