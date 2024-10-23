@@ -122,7 +122,9 @@ header {
   width: 100%;
   top: 40px;
   z-index: 10;
-  background-color: rgb(185, 185, 185);
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  padding: 10px 0;
 }
 
 .Slide1 {
@@ -398,7 +400,6 @@ header {
 }
 
 .Slide5 {
-  // background-color: red;
   height: 900px;
   padding-top: 10rem;
   width: 100%;
@@ -549,6 +550,106 @@ header {
         }
       }
     }
+  }
+}
+
+.Slide6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 1100px;
+
+  > .Banner {
+    position: relative;
+    background-image: url("../assets/img-icons/car2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+    width: 100%;
+    max-width: 1110px;
+    overflow: hidden;
+    z-index: -2;
+
+    > img {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+
+    .Content {
+      padding: 1.7rem 1rem;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      > div {
+        width: 100%;
+        max-width: 370px;
+        // height: 300px;
+
+        h4 {
+          font-size: 43px;
+          font-family: "khandevane";
+        }
+
+        span {
+          align-self: end;
+          font-family: "sansbold";
+        }
+
+        button {
+          height: 40px;
+          max-width: 233px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    h6 {
+      border-top: 3px solid $primary-color;
+      padding-top: 10px;
+      width: fit-content;
+    }
+  }
+
+  .Col3 {
+    .SearchContainer {
+      border: 1px solid slategray;
+      border-radius: 8px;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      background-color: $primary-color;
+    }
+  }
+
+  .Col4 {
+    max-width: 200px;
   }
 }
 
