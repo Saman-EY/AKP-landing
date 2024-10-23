@@ -112,7 +112,6 @@ header {
   width: 100%;
   top: 40px;
   z-index: 10;
-  background-color: #e1e1e1;
   border-radius: 5px;
   padding: 10px 0;
 }
@@ -121,7 +120,7 @@ header {
   background-image: url("../assets/img-icons/slide1Back.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 960px;
+  height: 1000px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -181,8 +180,12 @@ header {
   background-image: url("../assets/img-icons/big-back.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -80px;
-  height: 900px;
+  background-position-y: top;
+  height: 1050px;
+  width: 100%;
+}
+.Slide2.s4 {
+  background-position-y: bottom;
 }
 .Slide2 > .topArrow {
   max-width: 1200px;
@@ -262,8 +265,9 @@ header {
   background-image: url("../assets/img-icons/big-back.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -80px;
+  background-position-y: calc(50% - 130px);
   height: 1100px;
+  width: 100%;
 }
 .Slide3 h4 {
   font-family: "khandevane";
@@ -345,8 +349,9 @@ header {
   height: 900px;
   padding-top: 10rem;
   width: 100%;
-  max-width: 1040px;
+  max-width: 1840px;
   margin: 0 auto;
+  background-color: white;
 }
 .Slide5 > .topArrow {
   max-width: 1200px;
@@ -356,6 +361,10 @@ header {
   font-size: 43px;
   font-family: "khandevane";
   color: #ffcc49;
+}
+.Slide5 .link {
+  max-width: 900px;
+  margin: 0 auto;
 }
 .Slide5 .link > a {
   margin-right: auto;
@@ -512,103 +521,58 @@ header {
   max-width: 233px;
 }
 
-footer {
-  width: 100%;
-  max-width: 1130px;
-  margin: 0 auto;
-  height: 300px;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 0 1rem;
-}
-footer > div {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-footer > div h6 {
-  border-top: 3px solid #ffcc49;
-  padding-top: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-footer .Col3 .SearchContainer {
-  border: 1px solid slategray;
-  border-radius: 8px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer .Col3 button {
-  background-color: #ffcc49;
-}
-footer .Col4 {
-  max-width: 200px;
-}
-
 .SwiperContainer .swiper.main {
   max-width: 1520px;
   max-height: 1000px;
 }
 .SwiperContainer .swiperUtilContainer {
   position: absolute;
-  background-color: red;
+  top: 40%;
+  left: 70px;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
   z-index: 10;
 }
+.SwiperContainer .swiperUtilContainer #active-slide-index {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  font-size: 1.1rem;
+}
 .SwiperContainer .swiper-pagination.main {
+  transform: none !important;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
   position: static;
-  width: -moz-fit-content;
-  width: fit-content;
 }
-.SwiperContainer .swiper-pagination-bullet.main {
-  background: white;
-  width: 5px;
-  height: 5px;
+.SwiperContainer .swiper-pagination.main .swiper-pagination-bullet {
+  background: #a1a1a1;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   opacity: 1;
 }
-.SwiperContainer .swiper-pagination-bullet-active {
-  background-color: transparent;
+.SwiperContainer .swiper-pagination.main .swiper-pagination-bullet-active {
+  background-color: white;
   width: 11px;
   height: 11px;
-  border: 1px solid #ffcc49;
   border-radius: 50%;
 }
 .SwiperContainer .custom-prev-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: transparent;
-}
-.SwiperContainer .custom-prev-btn img {
-  width: 14px;
-  height: 14px;
+  rotate: 180deg;
+  position: static;
 }
 .SwiperContainer .custom-next-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: transparent;
-}
-.SwiperContainer .custom-next-btn img {
-  width: 14px;
-  height: 14px;
+  position: static;
 }
 
 .CarSlider .swiper {
@@ -647,4 +611,41 @@ footer .Col4 {
 }
 .CarSlider .customSBtnNext {
   rotate: 180deg;
+}
+
+footer {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+footer > div h6 {
+  border-top: 3px solid #ffcc49;
+  padding-top: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .Col3 .SearchContainer {
+  border: 1px solid slategray;
+  border-radius: 8px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .Col3 button {
+  background-color: #ffcc49;
+}
+footer .Col4 {
+  max-width: 200px;
 }/*# sourceMappingURL=app.css.map */

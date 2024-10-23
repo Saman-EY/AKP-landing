@@ -15,15 +15,804 @@
     <!-- HEADER -->
     <header class="d-flex align-items-center justify-content-between px-5">
       <img src="./assets/img-icons/Logo.svg" alt="svg" />
-      <button>
-        <img src="./assets/img-icons/4dots.svg" alt="svg" />
+      <button id="NavbarBtn" class="text-white">
+        <svg
+          width="23"
+          height="24"
+          viewBox="0 0 23 24"
+          fill="red"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="4" cy="4.42578" r="4" fill="currentColor" />
+          <circle cx="4" cy="19.4258" r="4" fill="currentColor" />
+          <circle cx="19" cy="4.42578" r="4" fill="currentColor" />
+          <circle cx="19" cy="19.4258" r="4" fill="currentColor" />
+        </svg>
       </button>
     </header>
     <!-- HEADER END -->
 
     <main>
       <section class="SwiperContainer">
-       
+        <!-- main slider -->
+        <div class="swiper main text-white">
+          <div class="swiper-wrapper">
+            <!-- 1 -->
+            <div class="swiper-slide d-flex">
+              <!-- slide 1 -->
+              <section
+                style="padding-left: 10rem"
+                class="Slide1 d-flex flex-column gap-4"
+              >
+                <div class="header d-flex flex-column gap-3 text-center">
+                  <h4>اتو گالری آرمان خودرو پرستویی</h4>
+                  <h3>ماشین مورد علاقه خود را پیدا کنید</h3>
+                </div>
+
+                <div
+                  class="options text-white d-flex align-items-center justify-content-between"
+                >
+                  <section
+                    class="d-flex align-items-center justify-content-center w-100 gap-5"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      کمپانی
+
+                      <!-- svg -->
+                      <img
+                        src="./assets/img-icons/arrow-boldDown.svg"
+                        alt="svg"
+                      />
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      کارکرد
+
+                      <!-- svg -->
+                      <img
+                        src="./assets/img-icons/arrow-boldDown.svg"
+                        alt="svg"
+                      />
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      رنگ
+
+                      <!-- svg -->
+                      <img
+                        src="./assets/img-icons/arrow-boldDown.svg"
+                        alt="svg"
+                      />
+                    </div>
+                  </section>
+
+                  <!-- btn -->
+                  <button>
+                    <img src="./assets/img-icons/search.svg" alt="svg" />
+                    جستجو
+                  </button>
+                </div>
+
+                <div class="badges text-white">
+                  <h6 class="mb-4 text-center">محبوبترین جستجو ها</h6>
+
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-4"
+                  >
+                    <span class="fs14">
+                      <img src="./assets/img-icons/maki_car.svg" alt="svg" />
+                      تارا سفید
+                    </span>
+                    <span class="fs14">
+                      <img src="./assets/img-icons/maki_car.svg" alt="svg" />
+                      دنا پلاس
+                    </span>
+                    <span class="fs14">
+                      <img src="./assets/img-icons/maki_car.svg" alt="svg" />
+                      پژو 207
+                    </span>
+                    <span class="fs14">
+                      <img src="./assets/img-icons/maki_car.svg" alt="svg" />
+                      phonix 1402
+                    </span>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <!-- slide 2 -->
+              <section
+                style="padding-left: 10rem"
+                class="Slide2 p-4 text-white pt-5"
+              >
+                <div class="topArrow mt-5">
+                  <img
+                    src="./assets/img-icons/longarrow-toLeft.svg"
+                    alt="svg"
+                  />
+                  <h3>جدیدترین خودروهای صفر</h3>
+                </div>
+
+                <!-- car slider -->
+                <section class="CarSlider mt-2">
+                  <div class="link d-flex justify-content-end mb-2">
+                    <a href="#">
+                      <span class="mx-4"> دیدن همه </span>
+                      <img
+                        src="./assets/img-icons/arrow-yellowLeft.svg"
+                        alt="link"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="swiper car text-white">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <!-- card -->
+                        <div class="CarCard fs14">
+                          <img
+                            class="hoverArrowBtn"
+                            src="./assets/img-icons/arrow-circle.svg"
+                            alt="svg"
+                          />
+                          <div
+                            class="description d-flex flex-column gap-2 align-items-center"
+                          >
+                            <span class="border-bottom w-100 text-center pb-2">
+                              میتسوبیشی پاجرو 1995
+                            </span>
+
+                            <div
+                              class="d-flex align-items-center gap-2 justify-content-between"
+                            >
+                              <div>
+                                <span class="primary-text">قیمت : </span>
+                                <span>1.853.000.000</span>
+                              </div>
+
+                              <div>
+                                <span class="primary-text">رنگ : </span>
+                                <span>سبز-مشکی-آبی</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- card -->
+                        <div class="CarCard c2 fs14">
+                          <img
+                            class="hoverArrowBtn"
+                            src="./assets/img-icons/arrow-circle.svg"
+                            alt="svg"
+                          />
+                          <div
+                            class="description d-flex flex-column gap-2 align-items-center"
+                          >
+                            <span class="border-bottom w-100 text-center pb-2">
+                              میتسوبیشی پاجرو 1995
+                            </span>
+
+                            <div
+                              class="d-flex align-items-center gap-2 justify-content-between"
+                            >
+                              <div>
+                                <span class="primary-text">قیمت : </span>
+                                <span>1.853.000.000</span>
+                              </div>
+
+                              <div>
+                                <span class="primary-text">رنگ : </span>
+                                <span>سبز-مشکی-آبی</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- card -->
+                        <div class="CarCard c3 fs14">
+                          <img
+                            class="hoverArrowBtn"
+                            src="./assets/img-icons/arrow-circle.svg"
+                            alt="svg"
+                          />
+                          <div
+                            class="description d-flex flex-column gap-2 align-items-center"
+                          >
+                            <span class="border-bottom w-100 text-center pb-2">
+                              میتسوبیشی پاجرو 1995
+                            </span>
+
+                            <div
+                              class="d-flex align-items-center gap-2 justify-content-between"
+                            >
+                              <div>
+                                <span class="primary-text">قیمت : </span>
+                                <span>1.853.000.000</span>
+                              </div>
+
+                              <div>
+                                <span class="primary-text">رنگ : </span>
+                                <span>سبز-مشکی-آبی</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- card -->
+                        <div class="CarCard fs14">
+                          <img
+                            class="hoverArrowBtn"
+                            src="./assets/img-icons/arrow-circle.svg"
+                            alt="svg"
+                          />
+                          <div
+                            class="description d-flex flex-column gap-2 align-items-center"
+                          >
+                            <span class="border-bottom w-100 text-center pb-2">
+                              میتسوبیشی پاجرو 1995
+                            </span>
+
+                            <div
+                              class="d-flex align-items-center gap-2 justify-content-between"
+                            >
+                              <div>
+                                <span class="primary-text">قیمت : </span>
+                                <span>1.853.000.000</span>
+                              </div>
+
+                              <div>
+                                <span class="primary-text">رنگ : </span>
+                                <span>سبز-مشکی-آبی</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mt-4"
+                    >
+                      <div class="d-flex align-items-center gap-4 mx-auto">
+                        <button id="carsSliderPrev" class="customSBtnPrev">
+                          <img
+                            src="./assets/img-icons/arrow-xs.svg"
+                            alt="icon"
+                          />
+                        </button>
+                        <button id="carsSliderNext" class="customSBtnNext">
+                          <img
+                            src="./assets/img-icons/arrow-xs.svg"
+                            alt="icon"
+                          />
+                        </button>
+                      </div>
+                      <div class="swiper-scrollbar mt-2"></div>
+                    </div>
+                  </div>
+
+                  <!-- svg -->
+                  <div style="max-width: 400px" class="mx-auto mt-3">
+                    <img
+                      style="transform: scaleX(-1)"
+                      src="./assets/img-icons/longarrow-toLeft.svg"
+                      alt="svg"
+                    />
+                  </div>
+                </section>
+              </section>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <!-- slide 3 -->
+              <section
+                style="padding-left: 10rem"
+                class="Slide3 text-white d-flex flex-column justify-content-center"
+              >
+                <h4 class="mb-3">درباره آرمان خودرو پرستویی</h4>
+
+                <section class="Content">
+                  <div class="description">
+                    <p class="text-justify">
+                      اتوگالری آرمان خودرو از سال 1390 در زمینه خرید و فروش
+                      خودروهای صفر فعالیت خود را آغازنموده و در طول این سال‌ها
+                      همواره در خصوص کسب رضایت مشتریان تلاش خود را ادامه داده،
+                      درهمین راستا با دریافت مجوزهای قانونی و ایجاد روشهای نوین
+                      کسب و کارهای مجازی، قوی تر از گذشته جهت راهنمایی و مشاوره
+                      دقیق در امر خرید و فروش خودروهای صفر و کارکرده در خدمت شما
+                      هموطنان گرامی می باشد. لازم به ذکر است مجموعه آرمان خودرو
+                      پرستویی با هدف تسهیل در فروش خودروهای کارکرده، امکان درج
+                      آگهی رایگان را در سایت آرمان خودرو برای شما عزیزان نیز
+                      فراهم آورده است. امید است مجموعه آرمان خودرو بتواند در
+                      راستای شفاف سازی و مشاوره موثر برای شما مشتریان گرامی گامی
+                      موثر بردارد.
+                    </p>
+
+                    <div class="footer mt-4">
+                      <img
+                        src="./assets/img-icons/arrow-yellowLongDown.svg"
+                        alt="svg"
+                      />
+                      <span>خودرو های کارکرده</span>
+                    </div>
+                  </div>
+
+                  <!-- cards -->
+                  <section class="cards">
+                    <div
+                      class="c1 d-flex flex-column align-items-center justify-content-center gap-4 position-relative"
+                    >
+                      <img src="./assets/img-icons/carMoney.svg" alt="icon" />
+                      <span>مقایسه و خرید خودرو</span>
+                      <img
+                        class="arrow"
+                        src="./assets/img-icons/arrow-circleSmall.svg"
+                        alt="icon"
+                      />
+                    </div>
+                    <div class="c2"></div>
+                    <div class="c3"></div>
+                    <div
+                      class="c4 d-flex flex-column align-items-center justify-content-center gap-4 position-relative"
+                    >
+                      <img src="./assets/img-icons/sheypoor.svg" alt="icon" />
+                      <span>ثبت آگهی خودرو</span>
+                      <img
+                        class="arrow"
+                        src="./assets/img-icons/arrow-circleSmall.svg"
+                        alt="icon"
+                      />
+                    </div>
+                    <div
+                      class="c5 d-flex flex-column align-items-center justify-content-center gap-4 position-relative"
+                    >
+                      <img src="./assets/img-icons/badge.svg" alt="icon" />
+                      <span>قیمت روز خودرو</span>
+                      <img
+                        class="arrow"
+                        src="./assets/img-icons/arrow-circleSmall.svg"
+                        alt="icon"
+                      />
+                    </div>
+                    <div class="c6"></div>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide">
+              <!-- slide 4 -->
+              <section class="Slide2 s4 p-4 text-white pt-5">
+                <div class="topArrow mt-5">
+                  <div class="w-fit d-flex flex-column align-items-end gap-2">
+                    <h3>خودروهای کارکرده</h3>
+                    <span>جدیدترین آگهی ها</span>
+                  </div>
+                </div>
+
+                <!-- car slider -->
+                <section class="CarSlider mt-2">
+                  <div class="link d-flex justify-content-end mb-2">
+                    <a href="#">
+                      <span class="mx-4"> دیدن همه </span>
+                      <img
+                        src="./assets/img-icons/arrow-yellowLeft.svg"
+                        alt="link"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="swiper car2 text-white">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <!-- card -->
+                        <div class="CarCard fs14">
+                          <img
+                            class="hoverArrowBtn"
+                            src="./assets/img-icons/arrow-circle.svg"
+                            alt="svg"
+                          />
+                          <div
+                            class="description d-flex flex-column gap-2 align-items-center"
+                          >
+                            <span class="border-bottom w-100 text-center pb-2">
+                              میتسوبیشی پاجرو 1995
+                            </span>
+
+                            <div
+                              class="d-flex align-items-center gap-2 justify-content-between"
+                            >
+                              <div>
+                                <span class="primary-text">قیمت : </span>
+                                <span>1.853.000.000</span>
+                              </div>
+
+                              <div>
+                                <span class="primary-text">رنگ : </span>
+                                <span>سبز-مشکی-آبی</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- card -->
+                        <div class="CarCard c2 fs14">
+                          <img
+                            class="hoverArrowBtn"
+                            src="./assets/img-icons/arrow-circle.svg"
+                            alt="svg"
+                          />
+                          <div
+                            class="description d-flex flex-column gap-2 align-items-center"
+                          >
+                            <span class="border-bottom w-100 text-center pb-2">
+                              میتسوبیشی پاجرو 1995
+                            </span>
+
+                            <div
+                              class="d-flex align-items-center gap-2 justify-content-between"
+                            >
+                              <div>
+                                <span class="primary-text">قیمت : </span>
+                                <span>1.853.000.000</span>
+                              </div>
+
+                              <div>
+                                <span class="primary-text">رنگ : </span>
+                                <span>سبز-مشکی-آبی</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- card -->
+                        <div class="CarCard c3 fs14">
+                          <img
+                            class="hoverArrowBtn"
+                            src="./assets/img-icons/arrow-circle.svg"
+                            alt="svg"
+                          />
+                          <div
+                            class="description d-flex flex-column gap-2 align-items-center"
+                          >
+                            <span class="border-bottom w-100 text-center pb-2">
+                              میتسوبیشی پاجرو 1995
+                            </span>
+
+                            <div
+                              class="d-flex align-items-center gap-2 justify-content-between"
+                            >
+                              <div>
+                                <span class="primary-text">قیمت : </span>
+                                <span>1.853.000.000</span>
+                              </div>
+
+                              <div>
+                                <span class="primary-text">رنگ : </span>
+                                <span>سبز-مشکی-آبی</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- card -->
+                        <div class="CarCard fs14">
+                          <img
+                            class="hoverArrowBtn"
+                            src="./assets/img-icons/arrow-circle.svg"
+                            alt="svg"
+                          />
+                          <div
+                            class="description d-flex flex-column gap-2 align-items-center"
+                          >
+                            <span class="border-bottom w-100 text-center pb-2">
+                              میتسوبیشی پاجرو 1995
+                            </span>
+
+                            <div
+                              class="d-flex align-items-center gap-2 justify-content-between"
+                            >
+                              <div>
+                                <span class="primary-text">قیمت : </span>
+                                <span>1.853.000.000</span>
+                              </div>
+
+                              <div>
+                                <span class="primary-text">رنگ : </span>
+                                <span>سبز-مشکی-آبی</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between mt-4"
+                    >
+                      <div class="d-flex align-items-center gap-4 mx-auto">
+                        <button id="carsSliderPrev2" class="customSBtnPrev">
+                          <img
+                            src="./assets/img-icons/arrow-xs.svg"
+                            alt="icon"
+                          />
+                        </button>
+                        <button id="carsSliderNext2" class="customSBtnNext">
+                          <img
+                            src="./assets/img-icons/arrow-xs.svg"
+                            alt="icon"
+                          />
+                        </button>
+                      </div>
+                      <div class="swiper-scrollbar mt-2"></div>
+                    </div>
+                  </div>
+
+                  <!-- svg -->
+                  <div class="mx-auto mt-3 d-flex justify-content-end">
+                    <img
+                      style="margin-left: 2rem"
+                      src="./assets/img-icons/arrow-yellowInner.svg"
+                      alt="svg"
+                    />
+                  </div>
+                </section>
+              </section>
+            </div>
+            <!-- 5 -->
+            <div class="swiper-slide">
+              <!-- slide 5 -->
+              <section class="Slide5 text-black">
+                <div class="topArrow">
+                  <div class="w-fit d-flex flex-column align-items-end gap-2">
+                    <h3>اخبار خودرو</h3>
+                    <span>جدیدترین اخبار ها</span>
+                  </div>
+                </div>
+
+                <div class="link d-flex justify-content-end mb-2">
+                  <a class="text-black" href="#">
+                    <span class="mx-4"> دیدن همه </span>
+                    <svg
+                      width="36"
+                      height="8"
+                      viewBox="0 0 36 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M0.646385 3.5997C0.451122 3.79496 0.451122 4.11154 0.646385 4.3068L3.82837 7.48878C4.02363 7.68405 4.34021 7.68405 4.53547 7.48878C4.73074 7.29352 4.73074 6.97694 4.53547 6.78168L1.70705 3.95325L4.53547 1.12482C4.73074 0.929561 4.73074 0.612978 4.53547 0.417716C4.34021 0.222454 4.02363 0.222454 3.82837 0.417716L0.646385 3.5997ZM35.6917 3.45325L0.999939 3.45325L0.999939 4.45325L35.6917 4.45325L35.6917 3.45325Z"
+                        fill="#FFCC49"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- cards -->
+                <section
+                  class="d-flex gap-4 align-items-center justify-content-center"
+                >
+                  <div class="BlogCard">
+                    <img src="./assets/img-icons/b1.png" alt="banner" />
+
+                    <div class="Description">
+                      <!-- date on hover -->
+                      <div class="HoverDate">
+                        <span>1403/6/15</span>
+                      </div>
+
+                      <!-- header -->
+                      <h5>رانندگی مطمعن در طبیعت</h5>
+
+                      <div
+                        class="CollapseContent d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <p class="text-justify">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                          چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                          بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                          برای شرایط
+                        </p>
+
+                        <button class="w-100 rounded-3 bg-white mt-3">
+                          بیشتر
+                          <img src="./assets/img-icons/btnLine.svg" alt="svg" />
+                        </button>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center Features"
+                      >
+                        <!-- date -->
+                        <span class="date">1403/6/15</span>
+
+                        <!-- svg -->
+                        <span class="icon">
+                          <img
+                            src="./assets/img-icons/blog-arrow.svg"
+                            alt="icon"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="BlogCard">
+                    <img src="./assets/img-icons/b2.png" alt="banner" />
+
+                    <div class="Description">
+                      <!-- date on hover -->
+                      <div class="HoverDate">
+                        <span>1403/6/15</span>
+                      </div>
+
+                      <!-- header -->
+                      <h5>رانندگی مطمعن در طبیعت</h5>
+
+                      <div
+                        class="CollapseContent d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <p class="text-justify">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                          چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                          بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                          برای شرایط
+                        </p>
+
+                        <button class="w-100 rounded-3 bg-white mt-3">
+                          بیشتر
+                          <img src="./assets/img-icons/btnLine.svg" alt="svg" />
+                        </button>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center Features"
+                      >
+                        <!-- date -->
+                        <span class="date">1403/6/15</span>
+
+                        <!-- svg -->
+                        <span class="icon">
+                          <img
+                            src="./assets/img-icons/blog-arrow.svg"
+                            alt="icon"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="BlogCard">
+                    <img src="./assets/img-icons/b3.png" alt="banner" />
+
+                    <div class="Description">
+                      <!-- date on hover -->
+                      <div class="HoverDate">
+                        <span>1403/6/15</span>
+                      </div>
+
+                      <!-- header -->
+                      <h5>رانندگی مطمعن در طبیعت</h5>
+
+                      <div
+                        class="CollapseContent d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <p class="text-justify">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                          چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                          بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                          برای شرایط
+                        </p>
+
+                        <button class="w-100 rounded-3 bg-white mt-3">
+                          بیشتر
+                          <img src="./assets/img-icons/btnLine.svg" alt="svg" />
+                        </button>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center Features"
+                      >
+                        <!-- date -->
+                        <span class="date">1403/6/15</span>
+
+                        <!-- svg -->
+                        <span class="icon">
+                          <img
+                            src="./assets/img-icons/blog-arrow.svg"
+                            alt="icon"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </div>
+            <!-- 6 -->
+            <div class="swiper-slide">
+              <!-- slide6 -->
+              <section class="Slide6 text-black">
+                <div class="Banner">
+                  <img src="./assets/img-icons/frame1.svg" alt="frame" />
+                  <img src="./assets/img-icons/frame2.svg" alt="frame" />
+                  <section class="Content">
+                    <img
+                      style="max-width: 156px"
+                      src="./assets/img-icons/logoBlack.svg"
+                      alt="logo"
+                    />
+
+                    <div class="d-flex flex-column">
+                      <h4>خرید خودروی صفر شما</h4>
+                      <span>با بالاترین قیمت</span>
+
+                      <button class="w-100 rounded-3 bg-white mt-3">
+                        بیشتر
+                        <img src="./assets/img-icons/btnLine.svg" alt="svg" />
+                      </button>
+                    </div>
+                  </section>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="swiperUtilContainer">
+            <button id="homeslidernext" class="custom-next-btn text-white">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 21 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.0999 12.5417L11.6666 7.10841C11.0249 6.46675 9.9749 6.46675 9.33324 7.10841L3.8999 12.5417"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="swiper-pagination main"></div>
+            <div id="active-slide-index">01</div>
+            <button id="homesliderprev" class="custom-prev-btn text-white">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 21 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.0999 12.5417L11.6666 7.10841C11.0249 6.46675 9.9749 6.46675 9.33324 7.10841L3.8999 12.5417"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -98,7 +887,7 @@
     <!-- FOOTER END -->
 
     <script src="./scripts/swiper-bundle.js"></script>
-    <script src="./scripts/swiper-effect-utils.mjs"></script>
+    <!-- <script src="./scripts/swiper-effect-utils.mjs"></script> -->
     <script src="./scripts/bootstrap.bundle.min.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
     <script src="./scripts/app.js"></script>
