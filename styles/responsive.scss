@@ -1,188 +1,49 @@
 @media (max-width: 385px) {
-  .CardListContainer {
-    .MiniCard {
-      > img {
-        width: 57px;
-        height: 57px;
-        position: absolute;
-        left: 0px;
-        top: -18px;
-      }
-    }
-  }
+
 }
 @media (max-width: 400px) {
-  .AboutusSec1 {
-    .imgSec {
-      img:nth-of-type(1) {
-        width: 310px;
-        padding: 10px;
-      }
-      img:nth-of-type(2) {
-        bottom: -40px;
-        right: 90px;
-        max-width: 110px;
-      }
-    }
-  }
+
 }
 @media (max-width: 450px) {
-  .ListFiltersContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    > button {
-      margin: 0 auto;
-    }
-  }
-
-  .AccordionsContainer {
-    .openAccordion {
-      display: none !important;
-    }
-
-    .closeAccordion {
-      display: none !important;
-    }
-  }
+ 
 }
 @media (max-width: 500px) {
-  .AboutusSec3 {
-    > div {
-      h5 {
-        font-size: 45px;
-      }
-    }
-  }
+ 
 }
 
 @media (min-width: 500px) {
-  .HomeSec4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  
 }
 
 @media (max-width: 648px) {
-  .HomeSec4 {
-    > img {
-      position: absolute;
-      width: 130px;
-      height: 130px;
-      left: 0px;
-      bottom: -80px;
-    }
-  }
-
-  .AccordionsContainer {
-    padding-left: 20px;
-
-    .openAccordion {
-      width: 25px !important;
-      height: 25px !important;
-    }
-
-    .closeAccordion {
-      width: 25px !important;
-      height: 25px !important;
-    }
-  }
-
-  .HomeSec2 {
-    .btn-under-slider {
-      span {
-        left: 0px;
-      }
-    }
-  }
+ 
 }
 @media (max-width: 668px) {
-  footer {
-    height: auto;
-
-    > section {
-      padding: 10px;
-    }
-  }
+ 
 }
 @media (min-width: 680px) {
-  .MenuListsSec {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
+  
 }
 
 @media (max-width: 767.5px) {
-  .DesktopNavbar {
-    display: none;
-  }
-
-  .HomeSec2Paginate {
-    > div:nth-child(2) {
-      margin-right: 0 !important;
-      margin-bottom: 2rem;
-    }
-  }
-
-  .ReserveInfoSec {
-    .ReserveInfoBody {
-      > section {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
-  }
-
-  .ReserveSec {
-    form {
-      > div:nth-of-type(1) {
-        input {
-          width: 100%;
-        }
-      }
-      > div:nth-of-type(2) {
-        select {
-          width: 100%;
-        }
-
-        > div {
-          width: 100%;
-          input {
-            width: 100%;
-          }
-        }
-
-
-      }
-    }
-  }
+  
 }
 
 @media (min-width: 768px) {
-  .HomeSec1 {
-    > .decsription {
-      > h5 {
-        font-size: 85px !important;
-      }
-    }
-  }
-
-  .HomeSec6 {
-    > section {
-      justify-content: space-between;
-    }
-  }
+  
 }
 
 @media (max-width: 900px) {
-  .DesktopNavbar {
-    > .second {
-      flex-direction: column;
-
-      > div {
-        border: 0;
-      }
-    }
+  .swiperUtilContainer {
+    display: none !important;
   }
 }
-@media (min-width: 1000px) {
-  .AboutusSec3 {
-    padding: 1rem 6rem !important;
+@media (min-width: 900px) {
+  .swiper-slide > section {
+    padding-left: 10rem;
   }
+}
+
+@media (min-width: 1000px) {
+  
 }

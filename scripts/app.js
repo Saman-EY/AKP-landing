@@ -65,23 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // function updateActiveSlideInfo(swiper) {
-  //   document
-  //     .querySelectorAll(".swiper-pagination-bullet span")
-  //     .forEach(function (span) {
-  //       span.remove();
-  //     });
-
-  //   const activeBullet = document.querySelector(
-  //     ".swiper-pagination-bullet-active"
-  //   );
-
-  //   const slideNumber = document.createElement("span");
-  //   slideNumber.textContent = ` (Slide ${swiper.activeIndex + 1})`;
-
-  //   activeBullet.appendChild(slideNumber);
-  // }
-
   const Carswiper = new Swiper(".swiper.car", {
     speed: 500,
     slidesPerView: 1,
@@ -93,12 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     breakpoints: {
-      768: {
-        slidesPerView: 2, // Show 1 slide per view
+      468: {
+        slidesPerView: 2,
         spaceBetween: 30,
       },
-      1000: {
-        slidesPerView: 3, // Show 1 slide per view
+      868: {
+        slidesPerView: 3,
         spaceBetween: 30,
       },
     },
@@ -120,12 +103,12 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     breakpoints: {
-      768: {
-        slidesPerView: 2, // Show 1 slide per view
+      468: {
+        slidesPerView: 2,
         spaceBetween: 30,
       },
-      1000: {
-        slidesPerView: 3, // Show 1 slide per view
+      868: {
+        slidesPerView: 3,
         spaceBetween: 30,
       },
     },
@@ -168,4 +151,20 @@ document.addEventListener("DOMContentLoaded", function () {
   customNextBtn3.addEventListener("click", function () {
     Carswiper2.slideNext();
   });
+});
+
+// navbar
+const openNav = document.querySelector("#openNav");
+const closeNav = document.querySelector("#closeNav");
+const overlay = document.querySelector(".NavbarOverlay");
+const navbar = document.querySelector(".NavbarMenu");
+
+openNav.addEventListener("click", () => {
+  overlay.classList.add("open");
+  navbar.classList.add("open");
+});
+
+closeNav.addEventListener("click", () => {
+  overlay.classList.remove("open");
+  navbar.classList.remove("open");
 });

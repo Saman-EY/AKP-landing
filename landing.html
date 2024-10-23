@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="./styles/swiper.css" />
     <link rel="stylesheet" href="./styles/swiper-bundle.css" />
     <link rel="stylesheet" href="./styles/app.css" />
-    <link rel="stylesheet" href="./styles/responsive.scss" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <title>AKP</title>
   </head>
   <body class="BodyContainer">
     <!-- HEADER -->
     <header class="d-flex align-items-center justify-content-between px-5">
       <img src="./assets/img-icons/Logo.svg" alt="svg" />
-      <button id="NavbarBtn" class="text-white">
+      <button id="openNav" class="text-white">
         <svg
           width="23"
           height="24"
@@ -32,6 +32,86 @@
     </header>
     <!-- HEADER END -->
 
+    <!-- Navbar -->
+    <!-- overlay -->
+    <div class="NavbarOverlay"></div>
+    <section class="NavbarMenu">
+      <button id="closeNav">
+        <img src="./assets/img-icons/close.svg" alt="btn" />
+      </button>
+
+      <ul class="navbarUl">
+        <li class="active">
+          <div style="width: 240px; height: 1px"></div>
+          <a href="#"> خانه </a>
+        </li>
+        <li>
+          <div style="width: 240px; height: 1px"></div>
+          <a href="#"> قیمت روز </a>
+        </li>
+        <li>
+          <div style="width: 240px; height: 1px"></div>
+          <a href="#">مقایسه خودرو</a>
+        </li>
+        <li>
+          <div style="width: 240px; height: 1px"></div>
+          <a href="#">اخبار</a>
+        </li>
+        <li>
+          <div style="width: 240px; height: 1px"></div>
+          <a href="#">ثبت آگهی </a>
+        </li>
+        <li>
+          <div style="width: 240px; height: 1px"></div>
+          <a href="#">خودروهای کارکرده</a>
+        </li>
+        <li>
+          <div style="width: 240px; height: 1px"></div>
+          <a href="#">خودروهای صفر</a>
+        </li>
+        <li>
+          <div style="width: 240px; height: 1px"></div>
+          <a href="#">تماس با ما</a>
+        </li>
+      </ul>
+
+      <section class="mt-5">
+        <div class="d-flex align-items-center justify-content-center gap-5">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <img
+              style="width: 28px"
+              src="./assets/img-icons/instagram.svg"
+              alt="icon"
+            />
+            <img
+              style="width: 28px"
+              src="./assets/img-icons/telegram.svg"
+              alt="icon"
+            />
+            <img
+              style="width: 28px"
+              src="./assets/img-icons/linkdin.svg"
+              alt="icon"
+            />
+          </div>
+
+          <div
+            style="width: 1px; height: 30px; background-color: #aaaaaa"
+          ></div>
+
+          <div>
+            <span style="color: #aaaaaa; font-size: 12px"> 021-252698892 </span>
+            <img
+              style="width: 28px"
+              src="./assets/img-icons/phone2.svg"
+              alt="icon"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Navbar END -->
+
     <main>
       <section class="SwiperContainer">
         <!-- main slider -->
@@ -41,7 +121,7 @@
             <div class="swiper-slide d-flex">
               <!-- slide 1 -->
               <section
-                style="padding-left: 10rem"
+                
                 class="Slide1 d-flex flex-column gap-4"
               >
                 <div class="header d-flex flex-column gap-3 text-center">
@@ -133,7 +213,7 @@
             <div class="swiper-slide">
               <!-- slide 2 -->
               <section
-                style="padding-left: 10rem"
+                
                 class="Slide2 p-4 text-white pt-5"
               >
                 <div class="topArrow mt-5">
@@ -319,12 +399,12 @@
             <div class="swiper-slide">
               <!-- slide 3 -->
               <section
-                style="padding-left: 10rem"
+                
                 class="Slide3 text-white d-flex flex-column justify-content-center"
               >
                 <h4 class="mb-3">درباره آرمان خودرو پرستویی</h4>
 
-                <section class="Content">
+                <section class="Content d-flex flex-column">
                   <div class="description">
                     <p class="text-justify">
                       اتوگالری آرمان خودرو از سال 1390 در زمینه خرید و فروش
@@ -585,7 +665,7 @@
                   </div>
                 </div>
 
-                <div class="link d-flex justify-content-end mb-2">
+                <div class="link d-flex justify-content-end mb-2 d-none d-md-block">
                   <a class="text-black" href="#">
                     <span class="mx-4"> دیدن همه </span>
                     <svg
@@ -606,7 +686,7 @@
 
                 <!-- cards -->
                 <section
-                  class="d-flex gap-4 align-items-center justify-content-center"
+                  class="d-flex flex-column gap-4 align-items-center justify-content-center"
                 >
                   <div class="BlogCard">
                     <img src="./assets/img-icons/b1.png" alt="banner" />
@@ -630,7 +710,7 @@
                           برای شرایط
                         </p>
 
-                        <button class="w-100 rounded-3 bg-white mt-3">
+                        <button class="w-100 rounded-3 bg-white mt-3 ">
                           بیشتر
                           <img src="./assets/img-icons/btnLine.svg" alt="svg" />
                         </button>
@@ -772,7 +852,7 @@
             </div>
           </div>
 
-          <div class="swiperUtilContainer">
+          <div class="swiperUtilContainer ">
             <button id="homeslidernext" class="custom-next-btn text-white">
               <svg
                 width="35"
@@ -817,7 +897,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="mt-5 pt-5">
+    <footer class="mt-5 pt-5 align-items-center align-items-md-start justify-content-center justify-content-md-between gap-5">
       <!-- col1 -->
       <div class="Col1">
         <h6>آرمان خودرو پرستویی</h6>
