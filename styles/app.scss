@@ -824,7 +824,7 @@ header {
 .Footer {
   width: 100%;
   max-width: 1130px;
-  margin:  auto;
+  margin: auto;
   height: 80dvh;
   display: flex;
   flex-wrap: wrap;
@@ -837,7 +837,6 @@ header {
   &::-webkit-scrollbar {
     display: none;
   }
-
 
   > div {
     display: flex;
@@ -932,14 +931,72 @@ header {
   }
 }
 
-// animate
+// animations
 .animate1 {
-  transition: all ease 0.3s;
+  transition: all ease 0.3s 0.2s;
   transform: translateX(100%);
 }
 
 .animate1.show {
-  transition: all ease 0.3s;
+  transition: all ease 0.3s 0.2s;
 
   transform: translateX(0);
+}
+
+.animate2 {
+  transition: all ease 0.3s 0.3s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.animate2.show {
+  transition: all ease 0.3s 0.3s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animate3 {
+  transition: all ease 0.3s 0.3s;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.animate3.show {
+  transition: all ease 0.3s 0.3s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animate4 {
+  transition: all ease 0.3s 0.3s;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.animate4.show {
+  transition: all ease 0.3s 0.3s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animate5 {
+  transition: all ease 0.3s 0.3s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.animate5.show {
+  transition: all ease 0.3s 0.3s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animate6 {
+  transition: all ease 0.3s 0.3s;
+  opacity: 0;
+}
+
+.animate6.show {
+  transition: all ease 0.3s 0.3s;
+  opacity: 1;
 }

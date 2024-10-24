@@ -18,6 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     on: {
+      init: function () {
+        const firstSlide = document.querySelector(
+          `.swiper-slide:nth-child(1) [data-animate]`
+        );
+        const animateValue = firstSlide?.getAttribute("data-animate");
+
+        if (animateValue) {
+          animateSlides(animateValue);
+        }
+      },
+
       slideChange: function () {
         // Get the active index
         const activeIndex = swiper.activeIndex + 1; // Add 1 to make it human-readable (start from 1 instead of 0)
@@ -68,6 +79,15 @@ document.addEventListener("DOMContentLoaded", function () {
         // const animateValue = activeSlide.getAttribute('data-animate');
 
         // animateSlides(animateValue);
+
+        const activeSlide = document.querySelector(
+          `.swiper-slide:nth-child(${activeIndex}) [data-animate]`
+        );
+        const animateValue = activeSlide?.getAttribute("data-animate"); // Use optional chaining in case the element isn't found
+
+        if (animateValue) {
+          animateSlides(animateValue);
+        }
       },
     },
   });
@@ -126,6 +146,42 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // function animateSlides(activeAnimateValue) {
+  //   const slides = document.querySelectorAll("section[data-animate]");
+
+  //   slides.forEach((slide) => {
+  //     const slideAnimateValue = slide.getAttribute("data-animate");
+
+  //     if (slideAnimateValue === activeAnimateValue) {
+  //       slide.classList.add("show");
+  //       console.log("yes");
+  //     } else {
+  //       slide.classList.remove("show");
+  //       console.log("no");
+  //     }
+  //   });
+  // }
+
+  function animateSlides(activeAnimateValue) {
+    // Select all elements with 'data-animate' attribute, regardless of their tag
+    const elements = document.querySelectorAll("[data-animate]");
+
+    console.log(elements[0]);
+
+    elements.forEach((element) => {
+      const elementAnimateValue = element.getAttribute("data-animate");
+      console.log(elementAnimateValue, activeAnimateValue);
+
+      if (elementAnimateValue === activeAnimateValue) {
+        element.classList.add("show");
+        console.log("yes");
+      } else {
+        element.classList.remove("show");
+        console.log("no");
+      }
+    });
+  }
+
   // Select all buttons with class 'slider-btn'
   const Prevbuttons = document.querySelectorAll(".homesliderprevMobile");
   const Nextbuttons = document.querySelectorAll(".homeslidernextMobile");
@@ -138,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   Nextbuttons.forEach(function (button) {
     button.addEventListener("click", function () {
-      swiper.slidePrev(); 
+      swiper.slidePrev();
     });
   });
 
@@ -191,20 +247,3 @@ closeNav.addEventListener("click", () => {
   overlay.classList.remove("open");
   navbar.classList.remove("open");
 });
-
-// function animateSlides(activeAnimateValue) {
-//   const slides = document.querySelectorAll('section[data-animate]');
-
-//   slides.forEach((slide) => {
-//     const slideAnimateValue = slide.getAttribute('data-animate');
-
-//     if (slideAnimateValue === activeAnimateValue) {
-//       slide.classList.add('show');
-//       console.log("yes");
-//     } else {
-//       slide.classList.remove('show');
-//       console.log("no");
-
-//     }
-//   });
-// }
