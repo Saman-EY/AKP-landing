@@ -4,7 +4,7 @@
     <div class="swiper main text-white">
       <div class="swiper-wrapper">
         <!-- 1 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide d-flex">
           <!-- slide 1 -->
           <section class="Slide1 d-flex flex-column gap-4">
             <div class="header d-flex flex-column gap-3 text-center">
@@ -244,7 +244,7 @@
                   </div>
                 </div>
                 <div
-                  class="d-flex align-items-center justify-content-between mt-4"
+                  class="d-flex align-items-center justify-content-between mt-4 gap-2"
                 >
                   <div class="d-flex align-items-center gap-4 mx-auto">
                     <button id="carsSliderPrev" class="customSBtnPrev">
@@ -283,7 +283,7 @@
           >
             <h4 class="mb-3">درباره آرمان خودرو پرستویی</h4>
 
-            <section class="Content">
+            <section class="Content d-flex flex-column">
               <div class="description">
                 <p class="text-justify">
                   اتوگالری آرمان خودرو از سال 1390 در زمینه خرید و فروش
@@ -505,13 +505,13 @@
                   class="d-flex align-items-center justify-content-between mt-4"
                 >
                   <div class="d-flex align-items-center gap-4 mx-auto">
-                    <button id="carsSliderPrev" class="customSBtnPrev">
+                    <button id="carsSliderPrev2" class="customSBtnPrev">
                       <img
                         src="./assets/img-icons/arrow-xs.svg"
                         alt="icon"
                       />
                     </button>
-                    <button id="carsSliderNext" class="customSBtnNext">
+                    <button id="carsSliderNext2" class="customSBtnNext">
                       <img
                         src="./assets/img-icons/arrow-xs.svg"
                         alt="icon"
@@ -544,7 +544,9 @@
               </div>
             </div>
 
-            <div class="link d-flex justify-content-end mb-2">
+            <div
+              class="link d-flex justify-content-end mb-2 d-none d-md-block"
+            >
               <a class="text-black" href="#">
                 <span class="mx-4"> دیدن همه </span>
                 <svg
@@ -565,7 +567,7 @@
 
             <!-- cards -->
             <section
-              class="d-flex gap-4 align-items-center justify-content-center"
+              class="d-flex flex-column gap-4 align-items-center justify-content-center"
             >
               <div class="BlogCard">
                 <img src="./assets/img-icons/b1.png" alt="banner" />
@@ -729,22 +731,47 @@
             </div>
           </section>
         </div>
+      </div>
 
-        <div class="swiperUtilContainer">
-          <button
-            id="homeslidernext"
-            class="custom-next-btn text-white bg-black"
+      <div class="swiperUtilContainer">
+        <button id="homeslidernext" class="custom-next-btn text-white">
+          <svg
+            width="35"
+            height="35"
+            viewBox="0 0 21 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            next
-          </button>
-          <div class="swiper-pagination main"></div>
-          <button
-            id="homesliderprev"
-            class="custom-prev-btn text-white bg-black"
+            <path
+              d="M17.0999 12.5417L11.6666 7.10841C11.0249 6.46675 9.9749 6.46675 9.33324 7.10841L3.8999 12.5417"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="swiper-pagination main"></div>
+        <div id="active-slide-index">01</div>
+        <button id="homesliderprev" class="custom-prev-btn text-white">
+          <svg
+            width="35"
+            height="35"
+            viewBox="0 0 21 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            prev
-          </button>
-        </div>
+            <path
+              d="M17.0999 12.5417L11.6666 7.10841C11.0249 6.46675 9.9749 6.46675 9.33324 7.10841L3.8999 12.5417"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </section>

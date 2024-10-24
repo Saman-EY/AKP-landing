@@ -266,6 +266,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: calc(50% - 130px);
+  height: 1100px;
   width: 100%;
 }
 .Slide3 h4 {
