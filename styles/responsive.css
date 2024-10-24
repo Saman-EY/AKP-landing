@@ -17,6 +17,9 @@
   .Slide3 {
     background-position-y: center;
   }
+  .Footer {
+    height: 100dvh;
+  }
 }
 @media (max-width: 780px) {
   .Slide1 {
