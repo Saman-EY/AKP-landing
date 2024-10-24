@@ -11,38 +11,56 @@
 @media (max-width: 780px) {
   .Slide1 {
     padding: 0 1rem;
+    padding-top: 18rem;
   }
   .Slide1 > .options {
     flex-direction: column-reverse;
-    padding: 1rem 1.4rem;
+    padding: 1rem 2rem !important;
     gap: 1rem;
     height: auto;
+    border-radius: 40px !important;
   }
-  .Slide1 > section > div {
+  .Slide1 > .options > section {
+    padding: 0 3rem !important;
+  }
+  .Slide1 > .options > section > div {
     width: auto;
+  }
+  .Slide1 > .header > h4 {
+    font-size: 22px;
+  }
+  .Slide1 > .header > h3 {
+    font-size: 40px;
+  }
+  .Slide1 button {
+    width: 100% !important;
+    display: none;
+  }
+  .Slide1 .badges {
+    padding-bottom: 5rem;
   }
   .Slide1 .badges > div {
     flex-direction: column;
   }
   .Slide3 {
-    padding-top: 7rem;
+    padding-top: 10rem;
   }
   .Slide3 .description {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .Slide3 .cards .c3,
-  .Slide3 .cards .c4,
-  .Slide3 .cards .c5,
-  .Slide3 .cards .c6 {
-    display: none !important;
-  }
   .Slide6 .Content {
     z-index: 10;
   }
   .Slide6 .Content div {
     color: white;
+  }
+  .mobileUtilsTop {
+    display: flex !important;
+  }
+  .mobileUtilsBottom {
+    display: flex !important;
   }
 }
 @media (max-width: 900px) {

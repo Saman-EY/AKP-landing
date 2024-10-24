@@ -2,19 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper.main", {
     speed: 500,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 0,
     direction: "vertical",
     freeMode: true,
     //   cssMode: true,
-
+    // allowTouchMove: false,
+    simulateTouch: false,
     pagination: {
       el: ".swiper-pagination",
-    },
-
-    breakpoints: {
-      768: {
-        freeMode: false,
-      },
     },
 
     navigation: {
@@ -69,28 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
           NavbarBtn.classList.remove("text-black");
         }
 
+        // const activeSlide = document.querySelector(`.swiper-slide:nth-child(${activeIndex}) section`);
+        // const animateValue = activeSlide.getAttribute('data-animate');
 
-
-
-
-    // const activeSlide = document.querySelector(`.swiper-slide:nth-child(${activeIndex}) section`);
-    // const animateValue = activeSlide.getAttribute('data-animate');
-    
-    // animateSlides(animateValue);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // animateSlides(animateValue);
       },
     },
   });
@@ -149,6 +126,22 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // Select all buttons with class 'slider-btn'
+  const Prevbuttons = document.querySelectorAll(".homesliderprevMobile");
+  const Nextbuttons = document.querySelectorAll(".homeslidernextMobile");
+
+  // Add click event listener to each button
+  Prevbuttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      swiper.slideNext();
+    });
+  });
+  Nextbuttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      swiper.slidePrev(); 
+    });
+  });
+
   const customPrevBtn = document.getElementById("homeslidernext");
   const customNextBtn = document.getElementById("homesliderprev");
 
@@ -198,7 +191,6 @@ closeNav.addEventListener("click", () => {
   overlay.classList.remove("open");
   navbar.classList.remove("open");
 });
-
 
 // function animateSlides(activeAnimateValue) {
 //   const slides = document.querySelectorAll('section[data-animate]');
