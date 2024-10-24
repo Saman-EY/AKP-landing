@@ -6,6 +6,12 @@
   }
 }
 
+@media (max-width: 700px) {
+  .Slide5 {
+    padding-top: 5rem;
+  }
+}
+
 @media (max-width: 780px) {
   .Slide1 {
     padding: 0 1rem;
@@ -31,33 +37,31 @@
   }
 
   .Slide3 {
-
     padding-top: 7rem;
 
     .description {
       display: flex;
       justify-content: center;
-      align-items: center;  
+      align-items: center;
     }
 
-
-
-
-
     .cards {
-
-
-
-
-
-
-
-
       .c3,
       .c4,
       .c5,
       .c6 {
         display: none !important;
+      }
+    }
+  }
+
+  .Slide6 {
+    // margin-top: 10rem;
+    // background-color: white;
+    .Content {
+      z-index: 10;
+      div {
+        color: white;
       }
     }
   }

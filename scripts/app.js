@@ -4,10 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 10,
     direction: "vertical",
+    freeMode: true,
     //   cssMode: true,
 
     pagination: {
       el: ".swiper-pagination",
+    },
+
+    breakpoints: {
+      768: {
+        freeMode: false,
+      },
     },
 
     navigation: {
@@ -38,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ".swiper-pagination-bullet-active"
         );
         const activeIndexNumber = document.querySelector("#active-slide-index");
-        const NavbarBtn = document.querySelector("#NavbarBtn");
+        const NavbarBtn = document.querySelector("#openNav");
 
         if (activeIndex > 4) {
           nextBtn.classList.add("text-black");

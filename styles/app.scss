@@ -131,7 +131,7 @@ header {
   background-image: url("../assets/img-icons/slide1Back.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 1030px;
   width: 100%;
 
   display: flex;
@@ -309,7 +309,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: calc(50% - 130px);
-  height: 1100px;
+  height: 1190px;
   width: 100%;
 
   h4 {
@@ -406,7 +406,6 @@ header {
 }
 
 .Slide5 {
-  height: 900px;
   padding-top: 10rem;
   width: 100%;
   max-width: 1840px;
@@ -463,6 +462,7 @@ header {
       bottom: -50px;
       transition: all ease 0.3s;
       height: fit-content;
+      z-index: 20;
 
       .HoverDate {
         display: none;
@@ -578,7 +578,7 @@ header {
     width: 100%;
     max-width: 1110px;
     overflow: hidden;
-    z-index: -2;
+    z-index: 1;
 
     > img {
       position: absolute;
