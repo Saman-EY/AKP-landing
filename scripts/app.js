@@ -68,6 +68,29 @@ document.addEventListener("DOMContentLoaded", function () {
           NavbarBtn.classList.add("text-white");
           NavbarBtn.classList.remove("text-black");
         }
+
+
+
+
+
+    // const activeSlide = document.querySelector(`.swiper-slide:nth-child(${activeIndex}) section`);
+    // const animateValue = activeSlide.getAttribute('data-animate');
+    
+    // animateSlides(animateValue);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       },
     },
   });
@@ -175,3 +198,21 @@ closeNav.addEventListener("click", () => {
   overlay.classList.remove("open");
   navbar.classList.remove("open");
 });
+
+
+// function animateSlides(activeAnimateValue) {
+//   const slides = document.querySelectorAll('section[data-animate]');
+
+//   slides.forEach((slide) => {
+//     const slideAnimateValue = slide.getAttribute('data-animate');
+
+//     if (slideAnimateValue === activeAnimateValue) {
+//       slide.classList.add('show');
+//       console.log("yes");
+//     } else {
+//       slide.classList.remove('show');
+//       console.log("no");
+
+//     }
+//   });
+// }

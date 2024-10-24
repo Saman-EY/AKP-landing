@@ -837,3 +837,19 @@ footer {
     }
   }
 }
+
+
+
+
+
+// animate 
+.animate1 {
+  transition: all ease .3s;
+  transform: translateX(100%);
+} 
+
+.animate1.show {
+  transition: all ease .3s;
+
+  transform: translateX(0);
+}

@@ -704,4 +704,14 @@ footer .Col4 {
 .NavbarMenu .navbarUl li:hover, .NavbarMenu .navbarUl li.active {
   background-color: #ffcc49;
   color: black;
+}
+
+.animate1 {
+  transition: all ease 0.3s;
+  transform: translateX(100%);
+}
+
+.animate1.show {
+  transition: all ease 0.3s;
+  transform: translateX(0);
 }/*# sourceMappingURL=app.css.map */
