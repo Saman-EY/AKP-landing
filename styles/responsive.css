@@ -3,9 +3,19 @@
     width: 50px !important;
   }
 }
+@media (max-width: 560px) {
+  .Slide3 .cards {
+    grid-template-columns: 1fr !important;
+  }
+}
 @media (max-width: 700px) {
   .Slide5 {
     padding-top: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .Slide3 {
+    background-position-y: center;
   }
 }
 @media (max-width: 780px) {

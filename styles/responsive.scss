@@ -6,9 +6,21 @@
   }
 }
 
+@media (max-width: 560px) {
+  .Slide3 {
+    .cards {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
 @media (max-width: 700px) {
   .Slide5 {
     padding-top: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .Slide3 {
+    background-position-y: center;
   }
 }
 
@@ -26,7 +38,7 @@
       border-radius: 40px !important;
       > section {
         padding: 0 3rem !important;
-        >div {
+        > div {
           width: auto;
         }
       }
@@ -43,10 +55,8 @@
 
     button {
       width: 100% !important;
-      display: none ;
+      display: none;
     }
-
-   
 
     .badges {
       padding-bottom: 5rem;
@@ -64,10 +74,6 @@
       justify-content: center;
       align-items: center;
     }
-
-   .cards{
-    
-   }
   }
 
   .Slide6 {
@@ -81,19 +87,12 @@
     }
   }
 
-
-
   .mobileUtilsTop {
     display: flex !important;
   }
   .mobileUtilsBottom {
     display: flex !important;
   }
-
-
-
-
-
 }
 
 @media (max-width: 900px) {
