@@ -146,38 +146,17 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // function animateSlides(activeAnimateValue) {
-  //   const slides = document.querySelectorAll("section[data-animate]");
-
-  //   slides.forEach((slide) => {
-  //     const slideAnimateValue = slide.getAttribute("data-animate");
-
-  //     if (slideAnimateValue === activeAnimateValue) {
-  //       slide.classList.add("show");
-  //       console.log("yes");
-  //     } else {
-  //       slide.classList.remove("show");
-  //       console.log("no");
-  //     }
-  //   });
-  // }
-
   function animateSlides(activeAnimateValue) {
     // Select all elements with 'data-animate' attribute, regardless of their tag
     const elements = document.querySelectorAll("[data-animate]");
 
-    console.log(elements[0]);
-
     elements.forEach((element) => {
       const elementAnimateValue = element.getAttribute("data-animate");
-      console.log(elementAnimateValue, activeAnimateValue);
 
       if (elementAnimateValue === activeAnimateValue) {
         element.classList.add("show");
-        console.log("yes");
       } else {
         element.classList.remove("show");
-        console.log("no");
       }
     });
   }
