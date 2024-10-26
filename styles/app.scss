@@ -112,7 +112,7 @@ textarea {
 
 .BodyContainer {
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
   margin: 0 auto;
   position: relative;
 }
@@ -120,7 +120,10 @@ textarea {
 header {
   position: absolute;
   width: 100%;
+  max-width: 2400px;
   top: 25px;
+  right: 50%;
+  transform: translateX(50%);
   z-index: 10;
   // background-color: #808080;
   border-radius: 5px;
@@ -138,13 +141,12 @@ header {
   align-items: center;
 
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
   }
-
 
   > .header {
     > h4 {
@@ -227,8 +229,8 @@ header {
   height: 100dvh;
 
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
@@ -340,8 +342,8 @@ header {
   justify-content: center;
 
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
@@ -360,6 +362,14 @@ header {
     max-width: 1000px;
     gap: 6px;
     margin: 0 auto;
+    overflow-y: auto;
+
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .description {
       p {
@@ -438,28 +448,29 @@ header {
 }
 
 .Slide5 {
-  // padding-top: 4rem;
   width: 100%;
-  max-width: 1840px;
-  margin: 0 auto;
-  height: 100dvh;
-  background-color: white;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  // max-width: 1840px;
+  // margin: 0 auto;
+  // background-color: white;
 
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  // overflow-y: auto;
+  // -webkit-overflow-scrolling: touch;
+  // scrollbar-width: none;
+  // -ms-overflow-style: none;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
 
-  > .topArrow {
-    max-width: 1200px;
+  .Title {
+    width: 100%;
+    max-width: 1000px;
+    padding-right: 2rem;
     margin: 0 auto;
-
+    margin-top: 6rem;
     h3 {
       font-size: 43px;
       font-family: "khandevane";
@@ -467,30 +478,18 @@ header {
     }
   }
 
-  .link {
-    max-width: 900px;
-    margin: 0 auto;
-    > a {
-      margin-right: auto;
-      display: flex;
-      flex-direction: column;
-      color: black;
-      font-size: 15px;
-
-      span {
-        margin-left: 20px;
-      }
-
-      svg {
-        align-self: end;
-        width: 40px;
-        height: 20px;
-      }
+  .BlogCardContainer {
+    overflow-y: auto;
+    padding-bottom: 10rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 
   .BlogCard {
-    
     position: relative;
     > img {
       width: 285px;
@@ -788,7 +787,7 @@ header {
   .swiper {
     max-width: 1180px;
     max-height: 1000px;
-    padding-bottom: 0.5rem;
+    // padding-bottom: 0.5rem;
     // background-color: red;
   }
 
@@ -834,18 +833,20 @@ header {
 .Footer {
   width: 100%;
   max-width: 1130px;
+  margin: 0 auto;
   height: 100dvh;
   padding-left: 7rem;
   padding-right: 2rem;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  // align-items: center;
   // padding: 6rem 1rem;
 
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;

@@ -18,9 +18,9 @@
   }
 }
 @media (max-width: 700px) {
-  .Slide5 {
-    padding-top: 5rem;
-  }
+ 
+
+
 }
 @media (max-width: 768px) {
   .Slide3 {
@@ -38,7 +38,7 @@
 
     padding-top: 9rem;
 
-    > .options {
+    .options {
       flex-direction: column-reverse;
       padding: 1rem 2rem !important;
       gap: 1rem;
@@ -52,7 +52,7 @@
       }
     }
 
-    > .header {
+    .header {
       > h4 {
         font-size: 22px;
       }
@@ -75,7 +75,7 @@
   }
 
   .Slide3 {
-    padding-top: 10rem;
+    padding-top: 6rem;
 
     .description {
       display: flex;
@@ -85,8 +85,6 @@
   }
 
   .Slide6 {
-    // margin-top: 10rem;
-    // background-color: white;
     .Content {
       z-index: 10;
       div {

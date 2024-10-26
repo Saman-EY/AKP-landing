@@ -11,11 +11,6 @@
     padding-bottom: 4rem;
   }
 }
-@media (max-width: 700px) {
-  .Slide5 {
-    padding-top: 5rem;
-  }
-}
 @media (max-width: 768px) {
   .Slide3 {
     background-position-y: center;
@@ -29,23 +24,23 @@
     padding: 0 1rem;
     padding-top: 9rem;
   }
-  .Slide1 > .options {
+  .Slide1 .options {
     flex-direction: column-reverse;
     padding: 1rem 2rem !important;
     gap: 1rem;
     height: auto;
     border-radius: 40px !important;
   }
-  .Slide1 > .options > section {
+  .Slide1 .options > section {
     padding: 0 3rem !important;
   }
-  .Slide1 > .options > section > div {
+  .Slide1 .options > section > div {
     width: auto;
   }
-  .Slide1 > .header > h4 {
+  .Slide1 .header > h4 {
     font-size: 22px;
   }
-  .Slide1 > .header > h3 {
+  .Slide1 .header > h3 {
     font-size: 40px;
   }
   .Slide1 button {
@@ -59,7 +54,7 @@
     flex-direction: column;
   }
   .Slide3 {
-    padding-top: 10rem;
+    padding-top: 6rem;
   }
   .Slide3 .description {
     display: flex;

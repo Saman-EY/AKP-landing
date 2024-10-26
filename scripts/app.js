@@ -1,18 +1,81 @@
 document.addEventListener("DOMContentLoaded", function () {
+  function addScrollEventListeners2(swiperInstance) {
+    // Get the active slide's section with the `scrollable` class
+    const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
+    const scrollableSection = activeSlide.querySelector(".scrollable");
+
+    // Clear all previous event listeners and reset scroll position
+    swiperInstance.slides.forEach((slide) => {
+      const section = slide.querySelector(".scrollable");
+      if (section) {
+        section.onscroll = null;
+        section.onpointerup = null;
+        section.scrollTop = 0; // Reset scroll position to top on slide change
+      }
+    });
+
+    if (scrollableSection) {
+      const isScrollable =
+        scrollableSection.scrollHeight > scrollableSection.clientHeight;
+
+      console.log(
+        scrollableSection.scrollHeight,
+        scrollableSection.clientHeight,
+        activeSlide.scrollHeight,
+        window.innerHeight
+      );
+
+      if (!isScrollable) {
+        console.log("set true because no scroll");
+        swiperInstance.allowTouchMove = true;
+      } else {
+        console.log("set false because scroll needed");
+
+        swiperInstance.allowTouchMove = false;
+
+        scrollableSection.onscroll = () => {
+          console.log(
+            scrollableSection.clientHeight,
+            scrollableSection.scrollTop,
+            scrollableSection.scrollTop + scrollableSection.clientHeight,
+            scrollableSection.scrollHeight
+          );
+          let temp =
+            scrollableSection.scrollTop + scrollableSection.clientHeight;
+          temp = temp + 1;
+
+          if (
+            temp >= scrollableSection.scrollHeight ||
+            scrollableSection.scrollTop === 0
+          ) {
+            // Enable swipe when either at the bottom or top of the section
+            swiperInstance.allowTouchMove = true;
+            console.log("reached edge, enable touch move");
+          } else {
+            // Disable swipe until top or bottom is reached
+            swiperInstance.allowTouchMove = false;
+          }
+        };
+      }
+    }
+  }
   const swiper = new Swiper(".swiper.main", {
     speed: 500,
     slidesPerView: 1,
     spaceBetween: 0,
     direction: "vertical",
     // freeMode: true,
-    allowTouchMove: false,
+    // allowTouchMove: false,
     // simulateTouch: false,
+
     pagination: {
       el: ".swiper-pagination",
     },
 
     breakpoints: {
       760: {
+        allowTouchMove: false,
+
         mousewheel: true,
       },
     },
@@ -33,11 +96,12 @@ document.addEventListener("DOMContentLoaded", function () {
           animateSlides(animateValue);
         }
 
-        // addScrollEventListeners2();
+        addScrollEventListeners2(this);
       },
 
       slideChange: function () {
-        // Get the active index
+        addScrollEventListeners2(this);
+
         const activeIndex = swiper.activeIndex + 1; // Add 1 to make it human-readable (start from 1 instead of 0)
 
         // Update the active slide index display
@@ -82,11 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
           NavbarBtn.classList.remove("text-black");
         }
 
-        // const activeSlide = document.querySelector(`.swiper-slide:nth-child(${activeIndex}) section`);
-        // const animateValue = activeSlide.getAttribute('data-animate');
-
-        // animateSlides(animateValue);
-
         const activeSlide = document.querySelector(
           `.swiper-slide:nth-child(${activeIndex}) [data-animate]`
         );
@@ -106,30 +165,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     slides.forEach((slide, index) => {
       slide.addEventListener("scroll", (event) => {
-
         if (slide.scrollTop + slide.clientHeight >= slide.scrollHeight) {
           if (index < slides.length - 1) {
             swiper.slideNext();
           }
-        }
-      });
-    });
-  }
-
-  function addScrollEventListeners2() {
-    // Select all sections inside swiper slides
-    const slideSections = document.querySelectorAll(".swiper-slide > section");
-
-    slideSections.forEach((section, index) => {
-      section.addEventListener("scroll", () => {
-        // Check if the section has reached the bottom
-        if (section.scrollTop + section.clientHeight >= section.scrollHeight) {
-          console.log("yeah", swiper.allowTouchMove);
-          swiper.allowTouchMove = true; // Enable swipe to next slide
-        } else {
-          swiper.allowTouchMove = false; // Disable swipe until bottom is reached
-          console.log("no", swiper.allowTouchMove);
-
         }
       });
     });
