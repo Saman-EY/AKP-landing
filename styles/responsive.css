@@ -7,6 +7,9 @@
   .Slide3 .cards {
     grid-template-columns: 1fr !important;
   }
+  .Slide3 .Content {
+    padding-bottom: 4rem;
+  }
 }
 @media (max-width: 700px) {
   .Slide5 {
@@ -24,7 +27,7 @@
 @media (max-width: 780px) {
   .Slide1 {
     padding: 0 1rem;
-    padding-top: 18rem;
+    padding-top: 9rem;
   }
   .Slide1 > .options {
     flex-direction: column-reverse;
@@ -79,6 +82,10 @@
 @media (max-width: 900px) {
   .swiperUtilContainer {
     display: none !important;
+  }
+  .Footer {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (min-width: 900px) {

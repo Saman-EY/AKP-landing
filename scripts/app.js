@@ -4,12 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 0,
     direction: "vertical",
-    freeMode: true,
-    //   cssMode: true,
-    // allowTouchMove: false,
-    simulateTouch: false,
+    // freeMode: true,
+    allowTouchMove: false,
+    // simulateTouch: false,
     pagination: {
       el: ".swiper-pagination",
+    },
+
+    breakpoints: {
+      760: {
+        mousewheel: true,
+      },
     },
 
     navigation: {
@@ -27,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (animateValue) {
           animateSlides(animateValue);
         }
+
+        // addScrollEventListeners2();
       },
 
       slideChange: function () {
@@ -91,6 +98,42 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  function addScrollEventListeners() {
+    // Select all swiper slides
+    // const slides = document.querySelectorAll(".swiper-slide");
+    const slides = document.querySelectorAll(".swiper-slide > section");
+
+    slides.forEach((slide, index) => {
+      slide.addEventListener("scroll", (event) => {
+
+        if (slide.scrollTop + slide.clientHeight >= slide.scrollHeight) {
+          if (index < slides.length - 1) {
+            swiper.slideNext();
+          }
+        }
+      });
+    });
+  }
+
+  function addScrollEventListeners2() {
+    // Select all sections inside swiper slides
+    const slideSections = document.querySelectorAll(".swiper-slide > section");
+
+    slideSections.forEach((section, index) => {
+      section.addEventListener("scroll", () => {
+        // Check if the section has reached the bottom
+        if (section.scrollTop + section.clientHeight >= section.scrollHeight) {
+          console.log("yeah", swiper.allowTouchMove);
+          swiper.allowTouchMove = true; // Enable swipe to next slide
+        } else {
+          swiper.allowTouchMove = false; // Disable swipe until bottom is reached
+          console.log("no", swiper.allowTouchMove);
+
+        }
+      });
+    });
+  }
 
   const Carswiper = new Swiper(".swiper.car", {
     speed: 500,

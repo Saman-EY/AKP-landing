@@ -102,7 +102,7 @@ textarea {
 
 .BodyContainer {
   width: 100%;
-  max-width: 1620px;
+  max-width: 1920px;
   margin: 0 auto;
   position: relative;
 }
@@ -121,15 +121,14 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  height: 100dvh;
+  height: 100vh;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
   -ms-overflow-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .Slide1::-webkit-scrollbar {
   display: none;
@@ -192,6 +191,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100dvh;
   overflow-y: auto;
@@ -207,6 +209,7 @@ header {
   padding-top: 10rem !important;
 }
 .Slide2 > .topArrow {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -216,6 +219,7 @@ header {
   color: #ffcc49;
 }
 .Slide2 .CarSlider {
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -288,7 +292,9 @@ header {
   width: 100%;
   height: 100dvh;
   padding-top: 6rem;
-  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
@@ -308,7 +314,6 @@ header {
   width: 100%;
   max-width: 1000px;
   gap: 6px;
-  padding-bottom: 4rem;
   margin: 0 auto;
 }
 .Slide3 .Content .description p {
@@ -373,12 +378,14 @@ header {
 }
 
 .Slide5 {
-  padding-top: 4rem;
   width: 100%;
   max-width: 1840px;
   margin: 0 auto;
   height: 100dvh;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
@@ -559,7 +566,7 @@ header {
 }
 
 .SwiperContainer .swiper.main {
-  max-width: 1720px;
+  max-width: 2400px;
   max-height: 100vh;
 }
 .SwiperContainer .mobileUtilsTop {
@@ -606,8 +613,9 @@ header {
 }
 .SwiperContainer .swiperUtilContainer {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 70px;
+  transform: translateY(-50%);
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -695,11 +703,12 @@ header {
 .Footer {
   width: 100%;
   max-width: 1130px;
-  margin: auto;
-  height: 80dvh;
+  height: 100dvh;
+  padding-left: 7rem;
+  padding-right: 2rem;
   display: flex;
-  flex-wrap: wrap;
-  padding: 6rem 1rem;
+  flex-direction: column;
+  justify-content: center;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
@@ -708,12 +717,12 @@ header {
 .Footer::-webkit-scrollbar {
   display: none;
 }
-.Footer > div {
+.Footer > section > div {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
-.Footer > div h6 {
+.Footer > section > div h6 {
   border-top: 3px solid #ffcc49;
   padding-top: 10px;
   width: -moz-fit-content;
