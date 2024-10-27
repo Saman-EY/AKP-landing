@@ -18,28 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const isScrollable =
         scrollableSection.scrollHeight > scrollableSection.clientHeight;
 
-      console.log(
-        scrollableSection.scrollHeight,
-        scrollableSection.clientHeight,
-        activeSlide.scrollHeight,
-        window.innerHeight
-      );
-
       if (!isScrollable) {
-        console.log("set true because no scroll");
         swiperInstance.allowTouchMove = true;
       } else {
-        console.log("set false because scroll needed");
-
         swiperInstance.allowTouchMove = false;
 
         scrollableSection.onscroll = () => {
-          console.log(
-            scrollableSection.clientHeight,
-            scrollableSection.scrollTop,
-            scrollableSection.scrollTop + scrollableSection.clientHeight,
-            scrollableSection.scrollHeight
-          );
           let temp =
             scrollableSection.scrollTop + scrollableSection.clientHeight;
           temp = temp + 1;
@@ -50,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
           ) {
             // Enable swipe when either at the bottom or top of the section
             swiperInstance.allowTouchMove = true;
-            console.log("reached edge, enable touch move");
           } else {
             // Disable swipe until top or bottom is reached
             swiperInstance.allowTouchMove = false;
@@ -67,17 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // freeMode: true,
     // allowTouchMove: false,
     // simulateTouch: false,
+    mousewheel: true,
 
+ 
     pagination: {
       el: ".swiper-pagination",
-    },
-
-    breakpoints: {
-      760: {
-        allowTouchMove: false,
-
-        mousewheel: true,
-      },
     },
 
     navigation: {
