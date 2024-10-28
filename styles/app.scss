@@ -110,6 +110,28 @@ textarea {
 
 // ready classes ends
 
+.go-to-top {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  left: 20px;
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  width: 40px;
+  height: 40px;
+  rotate: 90deg;
+  z-index: 100;
+  &:hover {
+    background-color: #555;
+  }
+}
+
 .BodyContainer {
   width: 100%;
   // max-width: 1920px;
@@ -143,7 +165,12 @@ header {
   align-items: center;
 
   overflow-y: auto;
-  
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   > .header {
     > h4 {
@@ -254,7 +281,12 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     overflow-y: auto;
-
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .link {
       > a {
         margin-right: auto;
@@ -838,6 +870,15 @@ header {
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  section {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   > section > div {

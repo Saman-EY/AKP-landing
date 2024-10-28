@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // simulateTouch: false,
     mousewheel: true,
 
- 
     pagination: {
       el: ".swiper-pagination",
     },
@@ -77,6 +76,17 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       slideChange: function () {
+        const goToTopBtn = document.getElementById("goToTopBtn");
+
+        if (swiper.activeIndex === 0) {
+          goToTopBtn.classList.remove("d-flex");
+          goToTopBtn.classList.add("d-none");
+        } else {
+          goToTopBtn.style.display = "flex";
+          goToTopBtn.classList.remove("d-none");
+          goToTopBtn.classList.add("d-flex");
+        }
+
         addScrollEventListeners2(this);
 
         const activeIndex = swiper.activeIndex + 1; // Add 1 to make it human-readable (start from 1 instead of 0)
@@ -135,9 +145,14 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  const goToTopBtn = document.getElementById("goToTopBtn");
+
+  goToTopBtn.onclick = function () {
+    swiper.slideTo(0, 500); // Navigates to the first slide with a 500ms transition
+  };
+  
+
   function addScrollEventListeners() {
-    // Select all swiper slides
-    // const slides = document.querySelectorAll(".swiper-slide");
     const slides = document.querySelectorAll(".swiper-slide > section");
 
     slides.forEach((slide, index) => {

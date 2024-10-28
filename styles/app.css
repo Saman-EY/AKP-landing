@@ -100,6 +100,28 @@ textarea {
   width: fit-content;
 }
 
+.go-to-top {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  left: 20px;
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  width: 40px;
+  height: 40px;
+  rotate: 90deg;
+  z-index: 100;
+}
+.go-to-top:hover {
+  background-color: #555;
+}
+
 .BodyContainer {
   width: 100%;
   margin: 0 auto;
@@ -130,6 +152,12 @@ header {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.Slide1::-webkit-scrollbar {
+  display: none;
 }
 .Slide1 > .header > h4 {
   color: white;
@@ -221,6 +249,12 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.Slide2 .CarSlider::-webkit-scrollbar {
+  display: none;
 }
 .Slide2 .CarSlider .link > a {
   margin-right: auto;
@@ -710,6 +744,14 @@ header {
   -ms-overflow-style: none;
 }
 .Footer::-webkit-scrollbar {
+  display: none;
+}
+.Footer section {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.Footer section::-webkit-scrollbar {
   display: none;
 }
 .Footer > section > div {

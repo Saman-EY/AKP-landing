@@ -91,4 +91,7 @@
   .swiper-slide > section {
     padding-left: 10rem;
   }
+  #goToTopBtn {
+    display: none !important;
+  }
 }/*# sourceMappingURL=responsive.css.map */
